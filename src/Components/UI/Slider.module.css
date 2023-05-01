@@ -1,0 +1,152 @@
+.awsBtn {
+  /*General*/
+  --slider-height-percentage: 60%;
+  --slider-transition-duration: 700ms;
+  /*Arrows*/
+  --organic-arrow-thickness: 4px;
+  --organic-arrow-border-radius: 0px;
+  --organic-arrow-height: 40px;
+  --organic-arrow-color: #d6cdcd;
+  /*Controls*/
+  --control-button-width: 10%;
+  --control-button-height: 25%;
+  --control-button-background: transparent;
+  --control-bullet-color: #2d5182;
+  --control-bullet-active-color: #26456f;
+  /*Loader Bar*/
+  --loader-bar-color: #54467c;
+  --loader-bar-height: 2px;
+  margin-top: 4rem;
+
+  background-color: black;
+}
+
+/*ANIMÁCIÓ 1*/
+.slierTitle {
+  width: 25ch;
+  animation: typing 2s steps(25), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  bottom: 500px;
+  left: 50px;
+  right: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.mobileFallingLetters{
+  display: none;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/*ANIMÁCIÓ 2*/
+.trackingInContract {
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  position: absolute;
+  bottom: 500px;
+  left: 50px;
+  right: 0;
+  padding: 20px;
+  font-family: "Montserrat";
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+/*.awsBtn div img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}*/
+
+/* Mobil eszközök (kis képernyő) */
+@media only screen and (max-width: 767px) {
+  .awsBtn {
+    height: 100vh;
+    --slider-height-percentage: 100%;
+    --fold-out-perspective: unset !important; /*Teljes magasságú képek (100vh)*/
+    z-index: 1;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobileFallingLetters{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 95%;
+    transform: translateY(180%);
+    text-align: left;
+    color: #ffffff; /* A szöveg színe fehér legyen a láthatóság érdekében. */
+    z-index: 1;
+    display: block;
+  }
+  .awsBtn {
+
+    margin-top: 0rem;
+  }
+}
+
+/* Tablet eszközök (közepes képernyő) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mobile {
+    display: none;
+  }
+  .mobileFallingLetters{
+    display: none;
+  }
+  .desktopTitle{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 35%;
+    transform: translateY(180%);
+    text-align: left;
+    color: #ffffff; 
+    z-index: 1;
+    font-size: 1px;
+  }
+}
+
+/* Kisebb asztali és laptop kijelzők */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .mobile {
+    display: none;
+  }
+}
+
+/* Nagyobb asztali kijelzők és TV-k */
+@media only screen and (min-width: 1200px) {
+  .mobile {
+    display: none;
+  }
+}

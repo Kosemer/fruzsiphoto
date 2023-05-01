@@ -1,0 +1,27 @@
+# Engedélyezd a .htaccess használatát
+Options +FollowSymLinks
+Options -Indexes
+
+# URL-ek átírása (a React alkalmazás támogatása érdekében)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Állítsd be a base URL-t a projekt gyökérkönyvtárára
+  RewriteBase /
+
+  # Állítsd be, hogy a PHP fájlokat futtatni kell, ha azok léteznek
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^backend/.*$ - [L]
+
+  # Átirányítás az index.html fájlra, ha a kérés nem egy létező fájlt vagy könyvtárat érint
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# Engedélyezd a PHP futtatását
+AddType application/x-httpd-php .php
+<IfModule mod_php7.c>
+  DirectoryIndex index.html index.php
+</IfModule>

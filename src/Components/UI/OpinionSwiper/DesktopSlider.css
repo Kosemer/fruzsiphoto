@@ -1,0 +1,99 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+    background-color: #333;
+    padding: 40px;
+  }
+  
+  .mySwiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    height: auto;
+    width: auto;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    color: #333;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Set a minimum height */
+    min-height: 350px;
+    border-radius: 10px;
+    padding: 0 25px;
+   
+  }
+  
+  .swiper-slide p{
+    font-size: 20px;
+  }
+
+  .swiper-button-prev {
+    color: #ffffff;
+  }
+  
+  .swiper-button-next {
+    color: #ffffff;
+  }
+
+  .swiper-pagination-fraction{
+    color: white;
+  }
+
+  .opinionTitle{
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat';
+    background-color: #333;
+    padding: 20px;
+  }
+
+  .underline{
+    margin-top: -30px;
+    margin-bottom: 40px;
+    border: none;
+    height: 3px;
+    background-color: #e6ae4a;
+    width: 8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+  }
+  
+  /* Medium devices (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 960px) {
+    .swiper-slide {
+      height: auto;
+      width: auto;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      color: #333;
+      /* Center slide text vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* Set a minimum height */
+      min-height: 350px;
+      border-radius: 10px;
+      padding: 0 10px;
+     
+    }
+    .swiper-slide p{
+      font-size: 17px;
+    }
+  }
+  
+  /* Large devices (desktops) */
+  @media only screen and (min-width: 961px) {
+  }
+  
+  

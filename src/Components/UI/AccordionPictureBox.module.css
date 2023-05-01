@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .container > div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+  }
+  
+  .container > div:hover {
+    flex: 5;
+  }
+  

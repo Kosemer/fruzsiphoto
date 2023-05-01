@@ -1,0 +1,96 @@
+
+.title{
+    color: white;
+    text-align: center;
+    font-family: "Georgia", serif;
+  }
+
+  .underline{
+    width: 90px;
+    margin-top: -15px;
+    margin-bottom: 30px;
+    height: 2px;
+    background-color: #FF69B4;
+  }
+
+  .swiper {
+    width: 70%;
+    height: 360px;
+  }
+
+  .underline{
+    margin-top: -10px;
+    margin-bottom: 4rem;
+    border: none;
+    height: 3px;
+    background-color: #FF69B4;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-weight: bold;
+    color: #2c2929;
+    padding: 15px;
+    font-family: 'Montserrat';
+  }
+
+  .swiper-slide p{
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+  }
+
+  .swiper-slide:nth-child(1n) {
+    background-color: rgba(160, 231, 229, 0.9);
+    box-shadow: 0px 2px 15px 1px rgba(160, 231, 229, 0.5);
+  }
+
+  .swiper-slide:nth-child(2n) {
+    background-color: rgba(255, 22, 93, 0.9);
+    box-shadow: 0px 2px 15px 1px rgba(255, 22, 93, 0.5);
+  }
+
+  .swiper-slide:nth-child(3n) {
+    background-color: rgba(56, 229, 77, 0.9);
+    box-shadow: 0px 2px 15px 1px rgba(56, 229, 77, 0.5);
+  }
+
+  .swiper-slide:nth-child(4n) {
+    background-color: rgb(0, 68, 255, 0.9);
+    box-shadow: 0px 2px 15px 1px rgba(0, 68, 255, 0.5);
+  }
+
+  .swiper-slide:nth-child(5n) {
+    background-color: rgba(253, 255, 0, 0.9);
+    box-shadow: 0px 2px 15px 1px rgba(253, 255, 0, 0.5);
+  }
+
+  .swiper-slide:nth-child(6n) {
+    background-color: rgb(218, 12, 218, 0.9);
+    box-shadow: 0px 2px 15px 1px rgba(218, 12, 218, 0.5);
+  }
+
+  .swiper-slide:nth-child(7n) {
+    background-color: rgb(226, 24, 24, 0.9);
+    box-shadow: 0px 2px 15px 1px rgba(226, 24, 24, 0.5);
+  }
+
+  .swiper-slide:nth-child(8n) {
+    background-color: rgba(239, 124, 142, 0.9);
+    box-shadow: 0px 2px 15px 1px rgba(239, 124, 142, 0.5);
+  }
+
+  .swiper-slide:nth-child(9n) {
+    background-color: rgba(63,114,175,0.9);
+    box-shadow: 0px 2px 15px 1px rgba(63,114,175,0.5);
+  }
+
+  .swiper-slide:nth-child(10n) {
+    background-color: rgba(255, 22, 93, 0.9);
+    box-shadow: 0px 2px 15px 1px rgba(255, 22, 93, 0.5);
+  }

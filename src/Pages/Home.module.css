@@ -1,0 +1,170 @@
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-family: "Georgia", serif;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: white;
+  }
+  
+  blockquote {
+    max-width: 80%;
+  }
+
+  .author {
+    font-size: 20px;
+    color: black;
+  }
+
+  .title{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: "Georgia", serif;
+    font-size: 25px;
+    margin: 0 auto;
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  .line1 {
+    flex: 1;
+    border-bottom: 2px solid #FF69B4;
+    margin: 0rem 2rem 0rem 10rem;
+  }
+
+  .line2 {
+    flex: 1;
+    border-bottom: 2px solid #FF69B4;
+    margin: 0rem 10rem 0rem 2rem;
+  }
+  
+  .container, .pictureBox{
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: white;
+  }
+
+  .pictureBox{
+    background-color: #ffffff;
+    color: white;
+    padding-bottom: 7rem;
+  }
+  
+  .mobileCardSlider{
+    display: none;
+  }
+
+  .underline {
+    margin-top: -20px;
+    margin-bottom: 40px;
+    border: none;
+    height: 3px;
+    background-color: #FF69B4;
+    width: 8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .DesktopSlider{
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+
+
+  @media only screen and (max-width: 600px) {
+    .pictureBox{
+      display: none;
+    }
+    .divider{
+      display: none;
+    }
+    .mobileCardSlider{
+      display: block;
+      background-color: rgb(56, 53, 53);
+      padding-top: 10px;
+      padding-bottom: 60px;
+      overflow: hidden;
+    }
+    .underline {
+      margin-top: -20px;
+      margin-bottom: 40px;
+      border: none;
+      height: 3px;
+      background-color: #FF69B4;
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .DesktopSlider{
+      display: none;
+    }
+    .arrowIcon {
+      bottom: 0;
+      right: 0;
+      color: white;
+      animation: arrowAnimation 1s infinite alternate;
+      font-size: 30px;
+    }
+    
+    @keyframes arrowAnimation {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(20px);
+      }
+    }
+    
+  }
+  
+  /* Medium devices (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 960px) {
+    .pictureBox{
+      display: none;
+    }
+    .divider{
+      display: none;
+    }
+    .underline {
+      margin-top: -20px;
+      margin-bottom: 40px;
+      border: none;
+      height: 3px;
+      background-color: #FF69B4;
+      width: 20%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .quote {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30vh;
+      font-family: "Georgia", serif;
+      font-style: italic;
+      font-size: 30px;
+      line-height: 1.5;
+      text-align: center;
+      background-color: white;
+    }
+  }
+  
+  /* Large devices (desktops) */
+  @media only screen and (min-width: 961px) {
+  }
+  
+  
+  

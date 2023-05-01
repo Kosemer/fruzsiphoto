@@ -1,0 +1,80 @@
+.center {
+  width: 100%;
+  margin: auto;
+}
+
+
+.clickableSection {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  display: block;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  overflow: hidden;
+  border-bottom: 3px solid #aaa69d;
+  font-weight: 600;
+}
+
+.center section div {
+  max-height: 500px;
+  opacity: 1;
+  overflow-y: auto;
+  transition: height 2s, opacity 2s;
+}
+
+.center section:target div {
+  height: auto;
+  opacity: 1;
+  overflow-y: auto;
+  transition: height 2s, opacity 2s;
+}
+
+.center section:target .clickableSection {
+  background: #23967F;
+  color: #ffffff;
+  position: sticky;
+  top: 60px;
+  z-index: 1;
+  font-weight: 600;
+  border-bottom: 0px solid #ffffff;
+}
+
+.arrow {
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@keyframes rotateUp {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateDown {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.rotateUp {
+  animation: rotateUp 0.3s ease-out forwards;
+}
+
+.rotateDown {
+  animation: rotateDown 0.3s ease-out forwards;
+}
+
+
+
+
+

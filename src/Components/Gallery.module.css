@@ -1,0 +1,24 @@
+.galleryWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.galleryWrap .single {
+  width: 400px;
+  cursor: pointer;
+}
+
+.galleryWrap .single img {
+  max-width: 100%;
+}
+
+.galleryWrap .single img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}

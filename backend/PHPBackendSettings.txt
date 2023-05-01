@@ -1,0 +1,21 @@
+1. Innen szedd le a php-t 
+https://windows.php.net/download#php-8.0
+A zip fájlt csomagold ki és az alábbi módon "telepítsd"
+Windows esetén:
+
+Nyisd meg a "Control Panel" (Vezérlőpult) -> "System and Security" (Rendszer és biztonság) -> "System" (Rendszer) -> "Advanced System Settings" (Speciális rendszerbeállítások).
+A "System Properties" (Rendszer tulajdonságai) ablakban kattints az "Environment Variables" (Környezeti változók) gombra.
+A "System Variables" (Rendszer változók) résznél keress rá a "Path" változóra, majd kattints az "Edit" (Szerkesztés) gombra.
+Az "Edit environment variable" (Környezeti változó szerkesztése) ablakban kattints az "New" (Új) gombra, és add hozzá a PHP mappájának elérési útját (pl. C:\php).
+Kattints az "OK" gombra az összes ablakban a beállítások mentéséhez.
+
+2. Telepíteni kell a composert.
+
+3. Telepítsd a 7-Zip programot.
+
+4. Telepítsd a függőségeket cmd-ben abba a mappába, amibe a szerver fájlod van (pl. contact.php)
+	- composer require vlucas/phpdotenv
+	- composer require phpmailer/phpmailer
+5. Valószínűleg a tárhelyen újabb php verziót kell beállítanod (<= 8.4) 
+
+6. És a tárhelyre mehet a gyökérkönyvtár/backend mappába minden szerver fájl (contact.php, .env, vendor mappa)

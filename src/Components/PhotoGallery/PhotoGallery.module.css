@@ -1,0 +1,35 @@
+.container{
+    margin: 0 150px;
+    margin-top: 20px;
+    margin-top: 6rem;
+}
+
+/* Mobil eszközök (kis képernyő) */
+@media only screen and (max-width: 767px) {
+    .container{
+        margin: 0 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+  }
+  
+  /* Tablet eszközök (közepes képernyő) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container{
+        margin: 0 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+  }
+  
+  /* Kisebb asztali és laptop kijelzők */
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+  }
+  
+  /* Nagyobb asztali kijelzők és TV-k */
+  @media only screen and (min-width: 1200px) {
+    
+  }
+  
+

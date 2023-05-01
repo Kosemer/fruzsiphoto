@@ -1,0 +1,66 @@
+/* Arlista.module.css */
+.container {
+  font-family: Arial, sans-serif;
+  margin-top: 10rem;
+}
+
+.title {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  margin-bottom: 4rem;
+  font-family: "Caveat", cursive;
+  text-align: center;
+}
+
+.trackingInContract {
+  max-width: 1200px;
+  font-size: 23px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Montserrat";
+  margin-bottom: 4rem;
+}
+
+/* Small devices (mobile phones) */
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-top: 6rem;
+  }
+  .trackingInContract {
+    max-width: 100%;
+    padding: 0 20px;
+    font-size: 20px;
+  }
+}
+
+.sectionTitle {
+  color: rgb(39, 123, 83);
+  margin-bottom: 5px;
+}
+
+.paragraph {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  grid-auto-rows: min-content;
+}
+
+.cardsContainer {
+  grid-template-columns: 1fr;
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 961px) {
+}
+
+@media screen and (max-width: 767px) {
+}

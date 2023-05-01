@@ -1,0 +1,172 @@
+.container {
+  background-color: #ffffff;
+  
+}
+
+.contactForm {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contactForm label {
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.grecaptcha-badge {
+  display: none !important;
+}
+
+
+.heading {
+  font-family: "Georgia", serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 23px;
+}
+
+.contactForm select,
+.contactForm input,
+.contactForm textarea {
+  padding: 10px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.contactForm select {
+  color: #9b9b9b;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus,
+.contactForm select:focus {
+  outline: none;
+  box-shadow: 0 0 5px #212121;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contactForm button[type="submit"] {
+  background-color: #23967f;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contactForm button[type="submit"]:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.title {
+  text-align: center;
+  font-family: "Georgia", serif;
+  padding-top: 8rem;
+  color: #333;
+}
+
+.titleBottom {
+  text-align: center;
+  font-family: "Georgia", serif;
+  padding-top: 5rem;
+  color: #333;
+}
+
+.underline {
+  margin-top: -5px;
+  margin-bottom: 6rem;
+  border: none;
+  height: 3px;
+  background-color: #FF69B4;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.responseContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.successMessage{
+  display: flex;
+  align-items: center;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 50px; /* kör alakú hátteret állít be */
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Small devices (mobile phones) */
+@media only screen and (max-width: 600px) {
+  .contactForm {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm input[type="tel"],
+  .contactForm input[type="url"],
+  .contactForm select,
+  .contactForm textarea {
+    width: 100%;
+  }
+  .title {
+    padding-top: 8rem;
+    font-size: 17px;
+  }
+  .underline {
+    margin-top: 0px;
+    margin-bottom: 3rem;
+    height: 3px;
+    background-color: #FF69B4;
+    width: 30%;
+  }
+  .contactForm {
+    margin-top: 3rem;
+  }
+  .titleBottom {
+    text-align: center;
+    font-family: "Montserrat";
+    padding-top: 5rem;
+    color: #333;
+    font-size: 17px
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  .contactForm {
+    width: 80%;
+  }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 961px) {
+  .contactForm {
+  }
+}
