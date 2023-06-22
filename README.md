@@ -50,6 +50,7 @@ I made this page for a photographer. I wrote the whole thing in react and used p
 
 <a href="https://www.fruzsiphoto.hu/" target="_blank">https://www.fruzsiphoto.hu/</a>
 
+![Képkivágás](https://github.com/Kosemer/fruzsiphoto/assets/82768146/11457ff1-5e66-4a03-bb74-e89c08fbb810)
 ![Képkivágás2](https://github.com/Kosemer/fruzsiphoto/assets/82768146/17c68c07-733b-4353-be6c-3d070b105521)
 ![Képkivágás3](https://github.com/Kosemer/fruzsiphoto/assets/82768146/ba68a444-ebe8-4336-bf21-b05968d94b13)
 ![Képkivágás4](https://github.com/Kosemer/fruzsiphoto/assets/82768146/1a74f076-013f-4be8-adf0-416c1a269ed1)
