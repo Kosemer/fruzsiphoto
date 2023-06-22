@@ -50,7 +50,8 @@ I made this page for a photographer. I wrote the whole thing in react and used p
 
 <a href="https://www.fruzsiphoto.hu/" target="_blank">https://www.fruzsiphoto.hu/</a>
 
-![image](https://user-images.githubusercontent.com/82768146/198373257-57bc4eca-768c-43da-b041-5f5d051cc46f.JPG)
-![emptyInput](https://user-images.githubusercontent.com/82768146/198373270-79a0ffa5-54d3-4878-b68f-47e8f396fd77.JPG)
-![noCity](https://user-images.githubusercontent.com/82768146/198373275-2f33cc46-5481-4996-80a1-b4d88341c88f.JPG)
-![image2](https://user-images.githubusercontent.com/82768146/198373281-d2d1e0e8-944b-4acd-b6eb-fdc11bcb0043.JPG)
+![Képkivágás2](https://github.com/Kosemer/fruzsiphoto/assets/82768146/17c68c07-733b-4353-be6c-3d070b105521)
+![Képkivágás3](https://github.com/Kosemer/fruzsiphoto/assets/82768146/ba68a444-ebe8-4336-bf21-b05968d94b13)
+![Képkivágás4](https://github.com/Kosemer/fruzsiphoto/assets/82768146/1a74f076-013f-4be8-adf0-416c1a269ed1)
+![Képkivágás5](https://github.com/Kosemer/fruzsiphoto/assets/82768146/149cd3d3-46d1-4261-8ff4-135de43866a4)
+![Képkivágás6](https://github.com/Kosemer/fruzsiphoto/assets/82768146/5d0fbd7b-d47b-4945-8a6d-15c91c30ac52)
