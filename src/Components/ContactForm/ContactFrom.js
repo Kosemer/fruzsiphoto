@@ -29,7 +29,7 @@ const ContactForm = () => {
     const recaptchaToken = await new Promise((resolve) => {
       window.grecaptcha.ready(() => {
         window.grecaptcha
-          .execute("6LfS378lAAAAABNByvfMus2mzznY4ZHzmThpaFUO", {
+          .execute("****************************", {
             action: "contact",
           })
           .then(resolve);
