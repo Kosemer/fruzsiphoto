@@ -1,0 +1,47 @@
+.resizeButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  padding: 0 15px 0 15px;
+  font-size: 17px;
+}
+
+.resizeButtonContainer button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.resizeButtonContainer button:hover {
+  background: #284fcf;
+  color: #fff;
+}
+
+.container{
+  cursor: pointer;
+}
+
+.containerClosed{
+  cursor: pointer;
+}
+
+.container h3 {
+  margin-bottom: 4rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+
+.containerClosed h3 {
+  margin-top: -35px;
+  margin-bottom: 4rem;
+  text-align: center;
+  transition: margin-top 0.3s ease-in-out;
+}
+
+
+.errorMessage {
+  color: #f04a4a;
+  font-size: 17px;
+  font-weight: 600;
+}

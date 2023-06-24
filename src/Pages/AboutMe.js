@@ -1,17 +1,28 @@
 import classes from "./AboutMe.module.css";
-import { useEffect } from "react";
-import me from "../Assets/Me.jpg";
+import { useEffect, useState } from "react";
+import { ImageDimensions } from "../Pages/PhotoGalleryPage/ImageDimensions";
 
 function AboutMe() {
+
+  const [me, setMe] = useState(null);
+
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    async function loadImage() {
+      const imageData = await ImageDimensions("aboutMePicture");
+      if (imageData.length > 0) {
+        setMe(imageData[0].src); 
+      }
+    }
+
+    loadImage();
   }, []);
 
   return (
     <div className={classes.container}>
       <h1 className={classes.header}>Dobák Fruzsina vagyok</h1>
       <div className={classes.content}>
-        
         <p className={classes.text}>
           Gyerekkorom óta szeretek fotózni, így nem is csoda, hogy ezt a szakmát
           választottam. <br></br>
@@ -26,7 +37,7 @@ function AboutMe() {
           visszanézik a képeket eszükbe jusson, hogy akkor ott mennyire fontosok
           voltak és lesznek még sokáig egymásnak.
         </p>
-        <img src={me} alt="Dobák Fruzsina" className={classes.image} />
+        {me && <img src={me} alt="Dobák Fruzsina" className={classes.image} />}
       </div>
       <h2 className={classes.subheader}>Mit fotózom?</h2>
       <p className={classes.text}>

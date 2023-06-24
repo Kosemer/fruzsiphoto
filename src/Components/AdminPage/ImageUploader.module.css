@@ -1,0 +1,330 @@
+.container {
+  margin-top: 4rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.uploadFile {
+  height: 100%;
+  min-height: 550px;
+  width: 400px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  background-color: white;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.storageInfoClosed {
+  height: 70px;
+  overflow: hidden;
+  width: 400px;
+  padding: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  background-color: white;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.storageInfoOpen {
+  height: 100%;
+  min-height: 550px;
+  width: 400px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  background-color: white;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.uploadFile h3 {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.logoutButton {
+  margin-bottom: 0;
+}
+
+.darkModeButton {
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.buttonRow button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.buttonRow button:hover {
+  background: #284fcf;
+  color: #fff;
+}
+
+button {
+  display: block;
+  padding: 1em;
+  background: #767fe5;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.imageGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  background-color: white;
+  padding: 1rem 0rem 1rem 0rem;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.imageGrid img {
+  width: 150px;
+  height: auto;
+  margin: 5px;
+}
+
+.imagePreview {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.svg {
+  background: #284fcf;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg2 {
+  background: #55e6a5;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageUploadInfoText {
+  max-width: 800px;
+  font-weight: 600;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.imageUploadInfoText span {
+  font-size: 1.5rem;
+  color: #249940;
+  font-weight: 600;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.buttonContainer button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.buttonContainer button:hover {
+  background: #284fcf;
+  color: #fff;
+}
+
+.select {
+  margin-top: 2rem;
+  padding: 10px;
+  background-color: #d4d4d4;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* ImageUploader.module.css */
+.fileInput {
+  display: none;
+}
+
+.fileLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.fileLabel:hover {
+  background-color: #e5e7eb;
+}
+
+.fileLabelText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #1e3a8a;
+}
+
+.fileButton {
+  color: #1e3a8a;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pictureSize {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.warningText {
+  font-size: 18px;
+  color: #f04a4a;
+  font-weight: 600;
+}
+
+.goodSize {
+  color: #249940;
+}
+
+.error {
+  color: #f04a4a;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.successMessage {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 0 auto; /* Középre igazítás */
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+/* Small devices (mobile phones) */
+@media only screen and (max-width: 600px) {
+  .uploadFile,
+  .resizeImage {
+    height: 100%;
+    min-height: 500px;
+    max-width: 350px;
+  }
+  .logoutButton {
+    margin: 0;
+    margin-bottom: 0;
+  }
+  .imagePreview {
+    width: 2 50px;
+  }
+  .storageInfoClosed {
+    height: 70px;
+    overflow: hidden;
+    max-width: 350px;
+  }
+
+  .storageInfoOpen {
+    height: 100%;
+    min-height: 550px;
+    max-width: 350px;
+  }
+  .imageUploadInfoText {
+    max-width: 800px;
+    font-weight: 600;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .imageUploadInfoText span {
+    font-size: 22px;
+    color: #249940;
+    font-weight: 600;
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  .uploadFile,
+  .resizeImage,
+  .storageInfoOpen {
+    height: 100%;
+    min-height: 500px;
+    width: 500px;
+  }
+  .storageInfoClosed {
+    height: 70px;
+    overflow: hidden;
+
+    width: 500px;
+  }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 961px) {
+}

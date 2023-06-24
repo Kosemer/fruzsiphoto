@@ -1,0 +1,223 @@
+.container {
+  background-color: #181a1e;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  color: #fff;
+  margin-top: 4rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.uploadFile {
+  height: 100%;
+  min-height: 550px;
+  width: 400px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  background-color: #212528;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: rgba(16, 18, 20, 0.75) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.storageInfoClosed {
+  height: 70px;
+  overflow: hidden;
+  width: 400px;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  background-color: #212528;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.storageInfoOpen {
+  height: 100%;
+  min-height: 550px;
+  width: 400px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  background-color: #212528;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.uploadFile h3 {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.logoutButton {
+  margin-left: auto;
+  margin-bottom: 2rem;
+}
+
+.imageGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  background-color: #212528;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  padding: 1rem 0rem 1rem 0rem;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.imageGrid img {
+  width: 150px;
+  height: auto;
+  margin: 5px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.imageContainer:hover .overlay {
+  opacity: 1;
+}
+
+.overlay img {
+  width: 30px;
+}
+
+.imagePreview {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.donut {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  background: conic-gradient(
+    #767fe5 calc(var(--percentage) * 1turn),
+    #363d42 0
+  );
+}
+
+.donut::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  background: #212528;
+}
+
+.percentage {
+  position: absolute;
+  z-index: 1;
+  font-size: 2rem;
+  color: #767fe5;
+}
+
+.modalContainer {
+  background-color: #212528;
+  padding: 1em;
+  max-width: 500px;
+  width: 90%;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.02);
+}
+
+.modalContainer p {
+  margin: 1rem 0 2rem 0;
+  font-weight: 600;
+}
+
+/* Small devices (mobile phones) */
+@media only screen and (max-width: 600px) {
+  .uploadFile,
+  .resizeImage {
+    height: 100%;
+    min-height: 500px;
+    max-width: 350px;
+  }
+  .logoutButton {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .storageInfoClosed {
+    height: 70px;
+    overflow: hidden;
+    max-width: 350px;
+  }
+
+  .storageInfoOpen {
+    height: 100%;
+    min-height: 550px;
+    max-width: 350px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  .uploadFile,
+  .resizeImage,
+  .storageInfoOpen {
+    height: 100%;
+    min-height: 500px;
+    width: 500px;
+  }
+  .storageInfoClosed {
+    height: 70px;
+    overflow: hidden;
+
+    width: 500px;
+  }
+}

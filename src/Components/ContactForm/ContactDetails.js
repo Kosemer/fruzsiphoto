@@ -15,7 +15,7 @@ const ContactDetails = () => {
 
   function handleClickFace() {
     window.open(
-      "https://www.facebook.com/fruzsika88",
+      "https://www.facebook.com/profile.php?id=100093127426138",
       "_blank",
       "noopener,noreferrer"
     );

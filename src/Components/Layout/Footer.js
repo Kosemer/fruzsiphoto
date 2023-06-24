@@ -1,3 +1,13 @@
+/* Három fő részből áll: elérhetőségek, fotó szolgáltatások és a weboldal navigációs linkek.
+
+Az elérhetőségek szakasz tartalmazza a kapcsolattartási adatokat, mint például e-mail cím és telefon szám, valamint linkeket az Instagram és Facebook oldalakhoz. Ezekre a linkekre kattintva új böngésző ablakban nyílnak meg az oldalak.
+
+A fotó szolgáltatások szakasz linkeket tartalmaz a különböző fotózás szolgáltatásokra, mint például portré, esküvői, boudoir, sport és családi fotózás, valamint rendezvény fotózás.
+
+A harmadik szakaszban a weboldal oldalainak linkei találhatóak, mint például a Főoldal, Galéria, Árak, Rólam, Kapcsolat és Admin oldalak.
+
+Az alján a lábléc tartalmaz egy szerzői jogi szöveget, amely megjeleníti az aktuális évet és egy linket a FrontWeb oldalára. Végül figyelmeztetést ad a reCAPTCHA használatára vonatkozóan, ami azt jelenti, hogy a weboldalt a Google reCAPTCHA védi. */
+
 import React from "react";
 import classes from "./Footer.module.css";
 import email from "../../Assets/Icon/email.svg";
@@ -76,7 +86,7 @@ function Footer() {
           </div>
           <div className={classes.linkContainer}>
             <NavLink to="/arak" className={classes.linkText}>
-            Boudoir fotózás
+              Boudoir fotózás
             </NavLink>
           </div>
           <div className={classes.linkContainer}>
@@ -124,6 +134,11 @@ function Footer() {
               Kapcsolat
             </NavLink>
           </div>
+          <div className={classes.linkContainer}>
+            <NavLink to="/login" className={classes.linkText}>
+              Admin
+            </NavLink>
+          </div>
         </div>
       </div>
       <hr className={classes.underlineLong}></hr>
@@ -143,7 +158,10 @@ function Footer() {
         </a>{" "}
         | Minden jog fenntartva.
       </p>
-      <p className={classes.reCAPTCHA}>This site is protected by reCAPTCHA and the Google and Terms of Service apply.</p>
+      <p className={classes.reCAPTCHA}>
+        This site is protected by reCAPTCHA and the Google and Terms of Service
+        apply.
+      </p>
     </footer>
   );
 }

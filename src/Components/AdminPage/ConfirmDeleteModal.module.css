@@ -1,0 +1,38 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.02);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  background-color: white;
+  padding: 1em;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.02);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modalContainer p {
+  margin: 1rem 0 2rem 0;
+  font-weight: 600;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  margin-top: 1em;
+}
+
+.buttonContainer button {
+  width: 90px;
+  padding: 0.5rem;
+}

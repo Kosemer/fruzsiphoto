@@ -1,0 +1,148 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(36, 46, 77, 0.9),
+    rgba(137, 126, 121, 0.9)
+  );
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 1.5em;
+}
+.container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.loginForm {
+  width: 100%;
+  padding: 2em;
+  position: relative;
+  background: rgba(0, 0, 0, 0.15);
+}
+.loginForm:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #ff69b4;
+}
+.errorMessage {
+  color: #f04a4a;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  padding: 0;
+}
+
+.input {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .loginForm {
+    width: 90%;
+    max-width: 40em;
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  .loginForm {
+    width: 100%;
+    max-width: 40em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .loginForm {
+    width: 500px;
+    max-width: 40em;
+  }
+}
+
+.flexRow {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.label {
+  width: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f6f8;
+  cursor: pointer;
+  border-radius: 10px 0px 0px 10px;
+  padding: 10px;
+}
+
+.errorMessage {
+  color: #f04a4a;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.input {
+  flex: 1;
+  padding: 1em;
+  border: 0;
+  color: #8f8f8f;
+  font-size: 1rem;
+  border-radius: 0px 10px 10px 0px;
+  width: 10px;
+}
+.input:focus {
+  outline: none;
+  transition: transform 0.15s ease;
+  transform: scale(1.1);
+}
+
+.submit {
+  display: block;
+  padding: 1em;
+  width: 100%;
+  background: #ff69b4;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.submit:focus {
+  outline: none;
+  transition: transform 0.15s ease;
+  transform: scale(1.1);
+}
+
+::-moz-placeholder {
+  color: #8f8f8f;
+}
+
+:-ms-input-placeholder {
+  color: #8f8f8f;
+}
+
+::placeholder {
+  color: #8f8f8f;
+}

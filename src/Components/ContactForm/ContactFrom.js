@@ -100,20 +100,14 @@ const ContactForm = () => {
             <option value="Stúdió fotózás - Prémium csomag - 55.000 Ft">
               Stúdió fotózás - Prémium csomag - 55.000 Ft
             </option>
-            <option value="Stúdió fotózás - Prémium csomag - 55.000 Ft">
+            <option value="Esküvői fotózás - Prémium csomag - 55.000 Ft">
               Esküvői fotózás - Kreatív - 60.000 Ft
             </option>
             <option value="Esküvői fotózás - Szertartás - 30.000 Ft">
               Esküvői fotózás - Szertartás - 30.000 Ft
             </option>
-            <option value="Esküvői fotózás - Alap csomag - 30.000 Ft">
-              Esküvői fotózás - Alap csomag - 30.000 Ft
-            </option>
-            <option value="Esküvői fotózás - Normál csomag - 35.000 Ft">
-              Esküvői fotózás - Normál csomag - 35.000 Ft
-            </option>
-            <option value="Esküvői fotózás - Prémium csomag - 40.000 Ft">
-              Esküvői fotózás - Prémium csomag - 40.000 Ft
+            <option value="Esküvői fotózás - Esküvői csomag - 50.000 Ft-tól">
+              Esküvői fotózás - Esküvői csomag - 50.000 Ft-tól
             </option>
           </select>
           <label htmlFor="message">Üzeneted:</label>
@@ -139,38 +133,12 @@ const ContactForm = () => {
         </form>
       </div>
       <h1 className={classes.titleBottom}>
-        Vagy keress az alább lehetőségek egyikén!
+        Vagy keress az alábbi lehetőségek egyikén!
       </h1>
       <hr className={classes.underline} />
       <ContactDetails></ContactDetails>
     </div>
   );
 };
-
-/*    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" required />
-      </div>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" required />
-      </div>
-      <div>
-        <label>Select an photo type:</label>
-        <select id="photoType" name="photoType" required>
-          <option value="">--Select--</option>
-          <option value="image1">Photo 1</option>
-          <option value="image2">Photo 2</option>
-          <option value="image3">Photo 3</option>
-        </select>
-      </div>
-
-      <div>
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" required />
-      </div>
-      <button type="submit">{status}</button>
-    </form> */
 
 export default ContactForm;

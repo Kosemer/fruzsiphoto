@@ -1,9 +1,8 @@
 import classes from "./Prices.module.css";
-import Card from "../Components/UI/PriceCard";
+import Card from "../Components/PhotoPackages/PriceCard";
 import { useEffect } from "react";
 
 const Prices = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -13,10 +12,10 @@ const Prices = () => {
       {" "}
       <div className={classes.container}>
         <div className={classes.trackingInContract}>
-          Az alábbiakban leírt esküvői csomagajánlatok iránymutatók.<br></br> Minden
-          esküvő egyedi paraméterekkel rendelkezik. Ezért igyekszem mindig az
-          igényeknek megfelelően egyedi árajánlatot adni.<br></br><br></br> Kéréseddel
-          bátran keress!
+          Az alábbiakban leírt esküvői csomagajánlatok iránymutatók.<br></br>{" "}
+          Minden esküvő egyedi paraméterekkel rendelkezik. Ezért igyekszem
+          mindig az igényeknek megfelelően egyedi árajánlatot adni.<br></br>
+          <br></br> Kéréseddel bátran keress!
         </div>
         <Card></Card>
       </div>

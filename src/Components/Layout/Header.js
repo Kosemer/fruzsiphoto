@@ -1,7 +1,11 @@
+/* A navigációs menüt és a logót tartalmazza. A komponens reagál a böngésző ablak görgetésére: ha a felhasználó görget, a fejléc eltűnik, ha visszagörget, a fejléc újra megjelenik. Ez a funkció a useEffect és useState horgok használatával van implementálva.
+
+Figyelembe veszi a mobil nézet állapotát a cssMobile változó segítségével, amit a CartContext-ból szerez meg. Ha a nézet mobil, a fejléc stílusa változik, és a moblieMenuChange funkcióval lehet megváltoztatni ezt az állapotot. */
+
 import { Fragment, useContext, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./Header.module.css";
-import BurgerButton from "./BurgerButton";
+import BurgerButton from "../BurgerButton/BurgerButton";
 import CartContext from "../Store/cart-context";
 import Logo from "../../Assets/Logo/LogoHeaderNoBackground.png";
 import instagram from "../../Assets/SocialIcon/instagram.svg";
@@ -152,7 +156,7 @@ function Header() {
             ></img>
           </a>*/}
           <NavLink to="/" className={classes.logoLink}>
-          <img src={Logo} className={classes.logoMobile} alt="logo"></img>
+            <img src={Logo} className={classes.logoMobile} alt="logo"></img>
           </NavLink>
           <BurgerButton moblieMenuChange={moblieMenuChange}></BurgerButton>
         </header>
